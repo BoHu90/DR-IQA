@@ -1,0 +1,63 @@
+Total number of samples in the dataset: 51252750
+Total number of samples in the dataset: 51252750
+Total number of samples in the dataset: 51252750
+----------------- Options ---------------
+                              alpha: 0.999                         
+                                amp: False                         
+                               arch: resnet50                      
+                                aug: A                             
+                         batch_size: 60                            
+                               beta: 0.5                           
+                             cosine: False                         
+                           csv_path: ./contrast_train.csv          
+                       dist_backend: nccl                          
+                           dist_url: tcp://127.0.0.1:23456         
+                             epochs: 30                            
+                           feat_dim: 128                           
+                                gpu: None                          
+                               head: mlp                           
+                             jigsaw: False                         
+                      learning_rate: 0.05                          
+                    lr_decay_epochs: [120, 160]                    	[default: 120,160]
+                      lr_decay_rate: 0.1                           
+                                mem: bank                          
+                             method: Customize                     
+                              modal: RGB                           
+                       model_folder: ./test/Customize_resnet50_RGB_Jig_False_bank_aug_A_mlp_0.07	[default: None]
+                         model_name: Customize_resnet50_RGB_Jig_False_bank_aug_A_mlp_0.07	[default: None]
+                         model_path: ./test                        
+                           momentum: 0.9                           
+        multiprocessing_distributed: False                         
+                              n_aug: 7                             
+                      n_distortions: 1                             
+                            n_scale: 1                             
+                              nce_k: 65536                         
+                              nce_m: 0.5                           
+                              nce_t: 0.07                          
+                        num_workers: 40                            
+                          opt_level: O2                            
+                          optimizer: SGD                           
+                         patch_size: 224                           
+                         print_freq: 10                            
+                               rank: -1                            
+                             resume:                               
+                          save_freq: 1                             
+                               seed: None                          
+                         swap_crops: 1                             
+                          tb_folder: ./test/Customize_resnet50_RGB_Jig_False_bank_aug_A_mlp_0.07	[default: None]
+                            tb_path: ./test                        
+                               warm: False                         
+                       weight_decay: 0.0001                        
+                         world_size: -1                            
+----------------- End -------------------
+Epoch 1, Loss: 11.164751700561524
+Best model saved at epoch 1 with loss 11.164751700561524
+Epoch 2, Loss: 11.092443134887695
+Best model saved at epoch 2 with loss 11.092443134887695
+Epoch 3, Loss: 11.115005022827148
+Epoch 4, Loss: 11.10396749194336
+Epoch 5, Loss: 11.092316981384277
+Best model saved at epoch 5 with loss 11.092316981384277
+Epoch 6, Loss: 11.092312355773926
+Best model saved at epoch 6 with loss 11.092312355773926
+Epoch 7, Loss: 11.165391711547851
